@@ -1,4 +1,4 @@
-CFLAGS=-Wno-discarded-qualifiers -g -I./include -O3
+CFLAGS=-Wno-discarded-qualifiers -g -I./include -O0
 CC=gcc
 
 bin/main.exe: src/*.c
@@ -9,7 +9,4 @@ bin/main.exe: src/*.c
 all: bin/main.exe
 
 clean:
-	-rm bin/*
-	-rm arquivo.*
-	-rm *.idx.bin
-	-rm *.sex.bin
+	-rm bin/main.exe
